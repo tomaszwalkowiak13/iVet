@@ -65,7 +65,7 @@
         @foreach($employees as $employee)
         <div class="team-person">
             <div class="image-info">
-                <img src="{{ $employee->user->photos->first()->path ?? $placeholder}}" alt="" class="team-person-img" style="width: 100%; height: 100%; background-size: cover no-repeat center center;">
+                {{-- <img src="{{ $employee->user->photos->first()->path ?? $placeholder}}" alt="" class="team-person-img" style="width: 100%; height: 100%; background-size: cover no-repeat center center;"> --}}
                 <div class="info">
                     <span class="icon">i</span>
                     <h2>{{ $employee->user->FullName }}</h2>
