@@ -1,0 +1,16 @@
+.main-slider {
+    min-width: 100%;
+    height: 30vh;
+    min-height: 500px;
+    background-image: url('/img/main-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width:1000px) {
+    .main-slider {
+        background-attachment: inherit;
+    }
+}

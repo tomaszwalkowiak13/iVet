@@ -1,0 +1,22 @@
+//! utilities / helpers
+@import "./utils/mixins";
+@import "./utils/variables";
+
+//! site-wide base styles
+@import "./base/reset";
+@import "./base/custom";
+
+//! layouts
+@import "./layouts/header";
+@import "./layouts/slider";
+@import "./layouts/services";
+@import "./layouts/team";
+@import "./layouts/news";
+@import "./layouts/mobileApp";
+@import "./layouts/footer";
+@import "./layouts/contact_page";
+@import "./layouts/person_page";
+@import "./layouts/offer_page";
+@import "./layouts/services_page";
+@import "./layouts/article_page";
+@import "./layouts/privacy_policy_page";

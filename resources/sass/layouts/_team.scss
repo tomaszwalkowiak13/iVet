@@ -1,0 +1,101 @@
+.team {
+    border-bottom: 1px solid #ccc;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.team-title {
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    position: relative;
+
+    &:after {
+        height: 30px;
+        position: absolute;
+        content: '';
+        top: -3px;
+        left: -25px;
+        background-color: #00D600;
+        width: 50px;
+        z-index: -1;
+    }
+}
+
+.team-person {
+    position: relative;
+    width: 200px;
+    height: 550px;
+    outline: none;
+
+    .image-info {
+        position: relative;
+        width: 80%;
+        height: 450px;
+
+        .team-person-img {
+            object-fit: cover;
+            width: 200px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+            box-shadow: 9px 10px 30px -13px rgba(0, 0, 0, 0.75);
+        }
+
+        .info {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 20px !important;
+            font-family: $primary-font;
+            color: #fff;
+            clip-path: circle(5% at 89% 8%);
+            transition: background-color 500ms ease-in-out, clip-path 500ms ease-in-out;
+            cursor: help;
+
+            .icon {
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                font-weight: 700;
+                font-size: 1.1rem;
+                transition: color 500ms;
+
+                &:hover {
+                    color: #00D600;
+                }
+            }
+
+            &:hover {
+                background-color: #00D600;
+                clip-path: circle(100%);
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                font-weight: 500;
+                text-align: left;
+            }
+
+            p {
+                margin-top: 20px;
+                line-height: 1.3rem;
+                text-align: left;
+            }
+        }
+    }
+
+    .team-person-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $primary-font;
+        font-weight: 500;
+        font-size: 1.3rem;
+        margin: 20px 0;
+    }
+}
