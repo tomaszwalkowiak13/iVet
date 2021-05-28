@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/index.min.css') }}">
 </head>
 
 <body>
@@ -74,7 +74,7 @@
                     </ul>
                     <ul class="navbar-nav">
                         @guest
-                        <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Zaloguj się</a></li>
+                        {{-- <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Zaloguj się</a></li> --}}
                         @else
                         <li class="nav-item"><a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

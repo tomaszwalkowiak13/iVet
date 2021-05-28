@@ -1,0 +1,40 @@
+.services-body {
+    height: 100%;
+    min-height: 60vh;
+
+    .services_page {
+        margin: 50px 0;
+
+        &-title {
+            font-family: $secondary-font;
+            font-size: 1.5rem;
+            margin: 20px 0;
+            position: relative;
+
+            &:after {
+                height: 30px;
+                position: absolute;
+                content: '';
+                top: -4px;
+                left: -25px;
+                background-color: #00D600;
+                width: 50px;
+                z-index: -1;
+            }
+        }
+
+        &-content {
+            font-family: $primary-font;
+            line-height: 1.5rem;
+            color: #3c3c3c;
+
+        }
+
+        &-final {
+            font-family: $primary-font;
+            line-height: 1.5rem;
+            color: #3c3c3c;
+            margin: 20px 0 50px 0;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+body {
+    scroll-behavior: smooth;
+}
+
+.slick-slide {
+    text-align: -webkit-center;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    color: #00D600;
+    opacity: .75;
+    -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #00D600;
+    opacity: .75;
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\2022";
+    width: 10px;
+    height: 10px;
+    font-family: slick;
+    font-size: 6px;
+    line-height: 10px;
+    text-align: center;
+    color: #00D600;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
